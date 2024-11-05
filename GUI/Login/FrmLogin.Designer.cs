@@ -28,9 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmLogin));
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnClose1 = new Component.btnClose();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.btnThoat = new System.Windows.Forms.Button();
@@ -43,6 +45,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -64,6 +67,10 @@
             this.btnClose1.Name = "btnClose1";
             this.btnClose1.Size = new System.Drawing.Size(54, 42);
             this.btnClose1.TabIndex = 0;
+            // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
             // 
             // panel3
             // 
@@ -118,6 +125,8 @@
             // 
             // pictureBox3
             // 
+            this.pictureBox3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox3.BackgroundImage")));
+            this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBox3.Location = new System.Drawing.Point(27, 186);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(44, 35);
@@ -127,6 +136,8 @@
             // 
             // pictureBox2
             // 
+            this.pictureBox2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.BackgroundImage")));
+            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBox2.Location = new System.Drawing.Point(27, 96);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(44, 35);
@@ -136,18 +147,17 @@
             // 
             // txtPass
             // 
-            this.txtPass.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPass.Location = new System.Drawing.Point(88, 186);
+            this.txtPass.Location = new System.Drawing.Point(88, 199);
             this.txtPass.Name = "txtPass";
-            this.txtPass.Size = new System.Drawing.Size(367, 27);
+            this.txtPass.PasswordChar = '*';
+            this.txtPass.Size = new System.Drawing.Size(367, 22);
             this.txtPass.TabIndex = 4;
             // 
             // txtTenDN
             // 
-            this.txtTenDN.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTenDN.Location = new System.Drawing.Point(88, 96);
+            this.txtTenDN.Location = new System.Drawing.Point(88, 109);
             this.txtTenDN.Name = "txtTenDN";
-            this.txtTenDN.Size = new System.Drawing.Size(367, 27);
+            this.txtTenDN.Size = new System.Drawing.Size(367, 22);
             this.txtTenDN.TabIndex = 3;
             // 
             // label3
@@ -194,6 +204,7 @@
             this.Name = "FrmLogin";
             this.Text = "FrmLogin";
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
@@ -218,5 +229,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ErrorProvider errorProvider1;
     }
 }
