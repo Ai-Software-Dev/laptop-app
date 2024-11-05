@@ -16,6 +16,7 @@ namespace GUI.Home
         public FrmHome()
         {
             InitializeComponent();
+            StartPosition = FormStartPosition.CenterScreen;
         }
     }
 }

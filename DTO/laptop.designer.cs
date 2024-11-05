@@ -33,9 +33,6 @@ namespace DTO
     partial void Insertadmin(admin instance);
     partial void Updateadmin(admin instance);
     partial void Deleteadmin(admin instance);
-    partial void Insertuser(user instance);
-    partial void Updateuser(user instance);
-    partial void Deleteuser(user instance);
     partial void Insertchitietgiohang(chitietgiohang instance);
     partial void Updatechitietgiohang(chitietgiohang instance);
     partial void Deletechitietgiohang(chitietgiohang instance);
@@ -54,10 +51,13 @@ namespace DTO
     partial void Insertsanpham(sanpham instance);
     partial void Updatesanpham(sanpham instance);
     partial void Deletesanpham(sanpham instance);
+    partial void Insertuser(user instance);
+    partial void Updateuser(user instance);
+    partial void Deleteuser(user instance);
     #endregion
 		
 		public laptopDataContext() : 
-				base(global::DTO.Properties.Settings.Default.laptopConnectionString, mappingSource)
+				base(global::DTO.Properties.Settings.Default.laptopConnectionString1, mappingSource)
 		{
 			OnCreated();
 		}
@@ -91,14 +91,6 @@ namespace DTO
 			get
 			{
 				return this.GetTable<admin>();
-			}
-		}
-		
-		public System.Data.Linq.Table<user> users
-		{
-			get
-			{
-				return this.GetTable<user>();
 			}
 		}
 		
@@ -147,6 +139,14 @@ namespace DTO
 			get
 			{
 				return this.GetTable<sanpham>();
+			}
+		}
+		
+		public System.Data.Linq.Table<user> users
+		{
+			get
+			{
+				return this.GetTable<user>();
 			}
 		}
 	}
@@ -258,220 +258,6 @@ namespace DTO
 			{
 				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
 			}
-		}
-	}
-	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.users")]
-	public partial class user : INotifyPropertyChanging, INotifyPropertyChanged
-	{
-		
-		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
-		
-		private int _MaTaiKhoan;
-		
-		private string _TenKhachHang;
-		
-		private string _TenTaiKhoan;
-		
-		private string _MatKhau;
-		
-		private string _Email;
-		
-		private EntitySet<giohang> _giohangs;
-		
-		private EntitySet<hoadon> _hoadons;
-		
-    #region Extensibility Method Definitions
-    partial void OnLoaded();
-    partial void OnValidate(System.Data.Linq.ChangeAction action);
-    partial void OnCreated();
-    partial void OnMaTaiKhoanChanging(int value);
-    partial void OnMaTaiKhoanChanged();
-    partial void OnTenKhachHangChanging(string value);
-    partial void OnTenKhachHangChanged();
-    partial void OnTenTaiKhoanChanging(string value);
-    partial void OnTenTaiKhoanChanged();
-    partial void OnMatKhauChanging(string value);
-    partial void OnMatKhauChanged();
-    partial void OnEmailChanging(string value);
-    partial void OnEmailChanged();
-    #endregion
-		
-		public user()
-		{
-			this._giohangs = new EntitySet<giohang>(new Action<giohang>(this.attach_giohangs), new Action<giohang>(this.detach_giohangs));
-			this._hoadons = new EntitySet<hoadon>(new Action<hoadon>(this.attach_hoadons), new Action<hoadon>(this.detach_hoadons));
-			OnCreated();
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MaTaiKhoan", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
-		public int MaTaiKhoan
-		{
-			get
-			{
-				return this._MaTaiKhoan;
-			}
-			set
-			{
-				if ((this._MaTaiKhoan != value))
-				{
-					this.OnMaTaiKhoanChanging(value);
-					this.SendPropertyChanging();
-					this._MaTaiKhoan = value;
-					this.SendPropertyChanged("MaTaiKhoan");
-					this.OnMaTaiKhoanChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_TenKhachHang", DbType="NVarChar(255)")]
-		public string TenKhachHang
-		{
-			get
-			{
-				return this._TenKhachHang;
-			}
-			set
-			{
-				if ((this._TenKhachHang != value))
-				{
-					this.OnTenKhachHangChanging(value);
-					this.SendPropertyChanging();
-					this._TenKhachHang = value;
-					this.SendPropertyChanged("TenKhachHang");
-					this.OnTenKhachHangChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_TenTaiKhoan", DbType="NVarChar(255)")]
-		public string TenTaiKhoan
-		{
-			get
-			{
-				return this._TenTaiKhoan;
-			}
-			set
-			{
-				if ((this._TenTaiKhoan != value))
-				{
-					this.OnTenTaiKhoanChanging(value);
-					this.SendPropertyChanging();
-					this._TenTaiKhoan = value;
-					this.SendPropertyChanged("TenTaiKhoan");
-					this.OnTenTaiKhoanChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MatKhau", DbType="NVarChar(255)")]
-		public string MatKhau
-		{
-			get
-			{
-				return this._MatKhau;
-			}
-			set
-			{
-				if ((this._MatKhau != value))
-				{
-					this.OnMatKhauChanging(value);
-					this.SendPropertyChanging();
-					this._MatKhau = value;
-					this.SendPropertyChanged("MatKhau");
-					this.OnMatKhauChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Email", DbType="NVarChar(MAX)")]
-		public string Email
-		{
-			get
-			{
-				return this._Email;
-			}
-			set
-			{
-				if ((this._Email != value))
-				{
-					this.OnEmailChanging(value);
-					this.SendPropertyChanging();
-					this._Email = value;
-					this.SendPropertyChanged("Email");
-					this.OnEmailChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="user_giohang", Storage="_giohangs", ThisKey="MaTaiKhoan", OtherKey="MaTaiKhoan")]
-		public EntitySet<giohang> giohangs
-		{
-			get
-			{
-				return this._giohangs;
-			}
-			set
-			{
-				this._giohangs.Assign(value);
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="user_hoadon", Storage="_hoadons", ThisKey="MaTaiKhoan", OtherKey="MaTaiKhoan")]
-		public EntitySet<hoadon> hoadons
-		{
-			get
-			{
-				return this._hoadons;
-			}
-			set
-			{
-				this._hoadons.Assign(value);
-			}
-		}
-		
-		public event PropertyChangingEventHandler PropertyChanging;
-		
-		public event PropertyChangedEventHandler PropertyChanged;
-		
-		protected virtual void SendPropertyChanging()
-		{
-			if ((this.PropertyChanging != null))
-			{
-				this.PropertyChanging(this, emptyChangingEventArgs);
-			}
-		}
-		
-		protected virtual void SendPropertyChanged(String propertyName)
-		{
-			if ((this.PropertyChanged != null))
-			{
-				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
-			}
-		}
-		
-		private void attach_giohangs(giohang entity)
-		{
-			this.SendPropertyChanging();
-			entity.user = this;
-		}
-		
-		private void detach_giohangs(giohang entity)
-		{
-			this.SendPropertyChanging();
-			entity.user = null;
-		}
-		
-		private void attach_hoadons(hoadon entity)
-		{
-			this.SendPropertyChanging();
-			entity.user = this;
-		}
-		
-		private void detach_hoadons(hoadon entity)
-		{
-			this.SendPropertyChanging();
-			entity.user = null;
 		}
 	}
 	
@@ -1991,6 +1777,220 @@ namespace DTO
 		{
 			this.SendPropertyChanging();
 			entity.sanpham = null;
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.users")]
+	public partial class user : INotifyPropertyChanging, INotifyPropertyChanged
+	{
+		
+		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
+		
+		private int _MaTaiKhoan;
+		
+		private string _TenKhachHang;
+		
+		private string _TenTaiKhoan;
+		
+		private string _MatKhau;
+		
+		private string _Email;
+		
+		private EntitySet<giohang> _giohangs;
+		
+		private EntitySet<hoadon> _hoadons;
+		
+    #region Extensibility Method Definitions
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void OnMaTaiKhoanChanging(int value);
+    partial void OnMaTaiKhoanChanged();
+    partial void OnTenKhachHangChanging(string value);
+    partial void OnTenKhachHangChanged();
+    partial void OnTenTaiKhoanChanging(string value);
+    partial void OnTenTaiKhoanChanged();
+    partial void OnMatKhauChanging(string value);
+    partial void OnMatKhauChanged();
+    partial void OnEmailChanging(string value);
+    partial void OnEmailChanged();
+    #endregion
+		
+		public user()
+		{
+			this._giohangs = new EntitySet<giohang>(new Action<giohang>(this.attach_giohangs), new Action<giohang>(this.detach_giohangs));
+			this._hoadons = new EntitySet<hoadon>(new Action<hoadon>(this.attach_hoadons), new Action<hoadon>(this.detach_hoadons));
+			OnCreated();
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MaTaiKhoan", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
+		public int MaTaiKhoan
+		{
+			get
+			{
+				return this._MaTaiKhoan;
+			}
+			set
+			{
+				if ((this._MaTaiKhoan != value))
+				{
+					this.OnMaTaiKhoanChanging(value);
+					this.SendPropertyChanging();
+					this._MaTaiKhoan = value;
+					this.SendPropertyChanged("MaTaiKhoan");
+					this.OnMaTaiKhoanChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_TenKhachHang", DbType="NVarChar(255)")]
+		public string TenKhachHang
+		{
+			get
+			{
+				return this._TenKhachHang;
+			}
+			set
+			{
+				if ((this._TenKhachHang != value))
+				{
+					this.OnTenKhachHangChanging(value);
+					this.SendPropertyChanging();
+					this._TenKhachHang = value;
+					this.SendPropertyChanged("TenKhachHang");
+					this.OnTenKhachHangChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_TenTaiKhoan", DbType="NVarChar(255)")]
+		public string TenTaiKhoan
+		{
+			get
+			{
+				return this._TenTaiKhoan;
+			}
+			set
+			{
+				if ((this._TenTaiKhoan != value))
+				{
+					this.OnTenTaiKhoanChanging(value);
+					this.SendPropertyChanging();
+					this._TenTaiKhoan = value;
+					this.SendPropertyChanged("TenTaiKhoan");
+					this.OnTenTaiKhoanChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MatKhau", DbType="NVarChar(255)")]
+		public string MatKhau
+		{
+			get
+			{
+				return this._MatKhau;
+			}
+			set
+			{
+				if ((this._MatKhau != value))
+				{
+					this.OnMatKhauChanging(value);
+					this.SendPropertyChanging();
+					this._MatKhau = value;
+					this.SendPropertyChanged("MatKhau");
+					this.OnMatKhauChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Email", DbType="NVarChar(MAX)")]
+		public string Email
+		{
+			get
+			{
+				return this._Email;
+			}
+			set
+			{
+				if ((this._Email != value))
+				{
+					this.OnEmailChanging(value);
+					this.SendPropertyChanging();
+					this._Email = value;
+					this.SendPropertyChanged("Email");
+					this.OnEmailChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="user_giohang", Storage="_giohangs", ThisKey="MaTaiKhoan", OtherKey="MaTaiKhoan")]
+		public EntitySet<giohang> giohangs
+		{
+			get
+			{
+				return this._giohangs;
+			}
+			set
+			{
+				this._giohangs.Assign(value);
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="user_hoadon", Storage="_hoadons", ThisKey="MaTaiKhoan", OtherKey="MaTaiKhoan")]
+		public EntitySet<hoadon> hoadons
+		{
+			get
+			{
+				return this._hoadons;
+			}
+			set
+			{
+				this._hoadons.Assign(value);
+			}
+		}
+		
+		public event PropertyChangingEventHandler PropertyChanging;
+		
+		public event PropertyChangedEventHandler PropertyChanged;
+		
+		protected virtual void SendPropertyChanging()
+		{
+			if ((this.PropertyChanging != null))
+			{
+				this.PropertyChanging(this, emptyChangingEventArgs);
+			}
+		}
+		
+		protected virtual void SendPropertyChanged(String propertyName)
+		{
+			if ((this.PropertyChanged != null))
+			{
+				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+			}
+		}
+		
+		private void attach_giohangs(giohang entity)
+		{
+			this.SendPropertyChanging();
+			entity.user = this;
+		}
+		
+		private void detach_giohangs(giohang entity)
+		{
+			this.SendPropertyChanging();
+			entity.user = null;
+		}
+		
+		private void attach_hoadons(hoadon entity)
+		{
+			this.SendPropertyChanging();
+			entity.user = this;
+		}
+		
+		private void detach_hoadons(hoadon entity)
+		{
+			this.SendPropertyChanging();
+			entity.user = null;
 		}
 	}
 }

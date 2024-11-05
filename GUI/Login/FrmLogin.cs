@@ -21,6 +21,7 @@ namespace GUI.Login
         public FrmLogin()
         {
             InitializeComponent();
+            StartPosition = FormStartPosition.CenterScreen;
             this.btnDangNhap.Click += BtnDangNhap_Click;
             this.btnThoat.Click += BtnThoat_Click;
         }
