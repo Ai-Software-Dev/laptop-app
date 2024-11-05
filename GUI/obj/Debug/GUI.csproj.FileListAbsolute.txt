@@ -11,3 +11,17 @@ E:\O dia D\Nam4\PTPM-UDTM\DoAn\Application\ShopLaptop-Application\GUI\obj\Debug\
 E:\O dia D\Nam4\PTPM-UDTM\DoAn\Application\ShopLaptop-Application\GUI\obj\Debug\GUI.csproj.CopyComplete
 E:\O dia D\Nam4\PTPM-UDTM\DoAn\Application\ShopLaptop-Application\GUI\obj\Debug\GUI.exe
 E:\O dia D\Nam4\PTPM-UDTM\DoAn\Application\ShopLaptop-Application\GUI\obj\Debug\GUI.pdb
+D:\HK7\PTPMUDTM\DoAn\main\laptop-app\GUI\obj\Debug\GUI.csproj.AssemblyReference.cache
+D:\HK7\PTPMUDTM\DoAn\main\laptop-app\GUI\obj\Debug\GUI.Home.FrmHome.resources
+D:\HK7\PTPMUDTM\DoAn\main\laptop-app\GUI\obj\Debug\GUI.Login.FrmLogin.resources
+D:\HK7\PTPMUDTM\DoAn\main\laptop-app\GUI\obj\Debug\GUI.csproj.GenerateResource.cache
+D:\HK7\PTPMUDTM\DoAn\main\laptop-app\GUI\obj\Debug\GUI.exe
+D:\HK7\PTPMUDTM\DoAn\main\laptop-app\GUI\obj\Debug\GUI.pdb
+D:\HK7\PTPMUDTM\DoAn\main\laptop-app\GUI\obj\Debug\GUI.Properties.Resources.resources
+D:\HK7\PTPMUDTM\DoAn\main\laptop-app\GUI\obj\Debug\GUI.csproj.CoreCompileInputs.cache
+D:\HK7\PTPMUDTM\DoAn\main\laptop-app\GUI\bin\Debug\GUI.exe.config
+D:\HK7\PTPMUDTM\DoAn\main\laptop-app\GUI\bin\Debug\GUI.exe
+D:\HK7\PTPMUDTM\DoAn\main\laptop-app\GUI\bin\Debug\GUI.pdb
+D:\HK7\PTPMUDTM\DoAn\main\laptop-app\GUI\bin\Debug\Component.dll
+D:\HK7\PTPMUDTM\DoAn\main\laptop-app\GUI\bin\Debug\Component.pdb
+D:\HK7\PTPMUDTM\DoAn\main\laptop-app\GUI\obj\Debug\GUI.csproj.Up2Date

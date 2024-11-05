@@ -1,0 +1,90 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\HK7\\PTPMUDTM\\DoAn\\main\\laptop-app\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{3289113F-F374-49A5-B655-65AF82D9B9F1}|GUI\\GUI.csproj|d:\\hk7\\ptpmudtm\\doan\\main\\laptop-app\\gui\\login\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{3289113F-F374-49A5-B655-65AF82D9B9F1}|GUI\\GUI.csproj|solutionrelative:gui\\login\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3289113F-F374-49A5-B655-65AF82D9B9F1}|GUI\\GUI.csproj|d:\\hk7\\ptpmudtm\\doan\\main\\laptop-app\\gui\\properties\\resources.resx||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{3289113F-F374-49A5-B655-65AF82D9B9F1}|GUI\\GUI.csproj|solutionrelative:gui\\properties\\resources.resx||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3289113F-F374-49A5-B655-65AF82D9B9F1}|GUI\\GUI.csproj|D:\\HK7\\PTPMUDTM\\DoAn\\main\\laptop-app\\gui\\home\\frmhome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3289113F-F374-49A5-B655-65AF82D9B9F1}|GUI\\GUI.csproj|solutionrelative:gui\\home\\frmhome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3289113F-F374-49A5-B655-65AF82D9B9F1}|GUI\\GUI.csproj|d:\\hk7\\ptpmudtm\\doan\\main\\laptop-app\\gui\\home\\frmhome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{3289113F-F374-49A5-B655-65AF82D9B9F1}|GUI\\GUI.csproj|solutionrelative:gui\\home\\frmhome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Resources.resx",
+              "DocumentMoniker": "D:\\HK7\\PTPMUDTM\\DoAn\\main\\laptop-app\\GUI\\Properties\\Resources.resx",
+              "RelativeDocumentMoniker": "GUI\\Properties\\Resources.resx",
+              "ToolTip": "D:\\HK7\\PTPMUDTM\\DoAn\\main\\laptop-app\\GUI\\Properties\\Resources.resx",
+              "RelativeToolTip": "GUI\\Properties\\Resources.resx",
+              "ViewState": "AQIAAGwAAAAAAAAAAAAlwHwAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
+              "WhenOpened": "2024-11-05T05:28:09.126Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FrmLogin.cs [Design]",
+              "DocumentMoniker": "D:\\HK7\\PTPMUDTM\\DoAn\\main\\laptop-app\\GUI\\Login\\FrmLogin.cs",
+              "RelativeDocumentMoniker": "GUI\\Login\\FrmLogin.cs",
+              "ToolTip": "D:\\HK7\\PTPMUDTM\\DoAn\\main\\laptop-app\\GUI\\Login\\FrmLogin.cs [Design]",
+              "RelativeToolTip": "GUI\\Login\\FrmLogin.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-05T05:27:33.249Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FrmHome.cs",
+              "DocumentMoniker": "D:\\HK7\\PTPMUDTM\\DoAn\\main\\laptop-app\\GUI\\Home\\FrmHome.cs",
+              "RelativeDocumentMoniker": "GUI\\Home\\FrmHome.cs",
+              "ToolTip": "D:\\HK7\\PTPMUDTM\\DoAn\\main\\laptop-app\\GUI\\Home\\FrmHome.cs",
+              "RelativeToolTip": "GUI\\Home\\FrmHome.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-05T05:27:24.503Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "FrmHome.cs [Design]",
+              "DocumentMoniker": "D:\\HK7\\PTPMUDTM\\DoAn\\main\\laptop-app\\GUI\\Home\\FrmHome.cs",
+              "RelativeDocumentMoniker": "GUI\\Home\\FrmHome.cs",
+              "ToolTip": "D:\\HK7\\PTPMUDTM\\DoAn\\main\\laptop-app\\GUI\\Home\\FrmHome.cs [Design]",
+              "RelativeToolTip": "GUI\\Home\\FrmHome.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-05T05:27:24.975Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

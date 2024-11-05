@@ -18,5 +18,4 @@ namespace GUI.Home
             InitializeComponent();
         }
     }
-    }
 }
