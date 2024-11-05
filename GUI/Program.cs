@@ -1,4 +1,5 @@
-﻿using GUI.Login;
+﻿using GUI.Category;
+using GUI.Login;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,7 +18,7 @@ namespace GUI
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FrmLogin());
+            Application.Run(new FrmCategory());
         }
     }
 }

@@ -19,3 +19,4 @@ E:\O dia D\Nam4\PTPM-UDTM\DoAn\Application\ShopLaptop-Application\GUI\bin\Debug\
 E:\O dia D\Nam4\PTPM-UDTM\DoAn\Application\ShopLaptop-Application\GUI\bin\Debug\DTO.pdb
 E:\O dia D\Nam4\PTPM-UDTM\DoAn\Application\ShopLaptop-Application\GUI\bin\Debug\DTO.dll.config
 E:\O dia D\Nam4\PTPM-UDTM\DoAn\Application\ShopLaptop-Application\GUI\bin\Debug\DAL.pdb
+E:\O dia D\Nam4\PTPM-UDTM\DoAn\Application\ShopLaptop-Application\GUI\obj\Debug\GUI.Category.FrmCategory.resources

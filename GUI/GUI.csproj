@@ -56,6 +56,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Category\FrmCategory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Category\FrmCategory.Designer.cs">
+      <DependentUpon>FrmCategory.cs</DependentUpon>
+    </Compile>
     <Compile Include="Home\FrmHome.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -68,13 +74,25 @@
     <Compile Include="Login\FrmLogin.Designer.cs">
       <DependentUpon>FrmLogin.cs</DependentUpon>
     </Compile>
+    <Compile Include="Product\FrmProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Product\FrmProduct.Designer.cs">
+      <DependentUpon>FrmProduct.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Category\FrmCategory.resx">
+      <DependentUpon>FrmCategory.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Home\FrmHome.resx">
       <DependentUpon>FrmHome.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login\FrmLogin.resx">
       <DependentUpon>FrmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Product\FrmProduct.resx">
+      <DependentUpon>FrmProduct.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -100,8 +118,14 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Resources\delete.png" />
+    <Content Include="Resources\exit.png" />
     <Content Include="Resources\login1.jpg" />
+    <Content Include="Resources\loupe.png" />
     <Content Include="Resources\padlock.png" />
+    <Content Include="Resources\add.png" />
+    <Content Include="Resources\save.png" />
+    <Content Include="Resources\update.png" />
     <Content Include="Resources\user.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
