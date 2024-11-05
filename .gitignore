@@ -1,6 +1,13 @@
-.vs/
-*.suo
-*.user
+# Ignore all files in Debug and Release folders
+**/Debug/
+**/Release/
+
+# Ignore specific file types
 *.dll
 *.pdb
 *.cache
+*.suo
+*.user
+*.exe
+*.log
+.vs/
